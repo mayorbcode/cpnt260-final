@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo&family=Josefin+Sans&display=swap');
+
+body {
+  font-family: 'Josefin Sans', helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, legend {
+  font-family: 'Cardo', helvetica, sans-serif;
+}
+
+.main-nav a {
+  font-size: 1.5rem;
+}
+/* Home page fonts */
+
+.hero h1 {
+  font-size: 7rem;
+}
+
+.hero p {
+  font-size: 2.5rem;
+}
+
+.hero .page-button {
+  font-size: 2rem;
+}
+
+#page-text * {
+  color : white;
+  
+  text-align: center;
+  line-height: 1.3rem;
+}
+
+/* Gallery Section */
+
+/* Card contents */
+figure * {
+  /* This applies to the gallery, contact us and contact us figures */
+  text-align: center;
+}
+
+/* Forms */
+legend {
+  font-weight: bold;
+}
+
+#contact-form .send-button button {
+  text-shadow: 0px 1px 0px #283966;
+  color: #FFFFFF;
+  font-size: 1rem;
+}
+
+
+/* Login and Registration secitons */
+
+.log-reg-form legend {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.log-reg-form label {
+  font-size: 1.5em;
+}
+
+.log-reg-form input {
+  font-size: 1.2em;
+}
+
+.log-reg-button {
+  text-shadow: 0px 1px 0px #283966;
+  color: #FFFFFF;
+
+  font-size: 1.25rem;
+}
+
+/* Register invitation with link */
+.log-reg-invitation p {
+  color: white;
+  
+  font-size: 1.5em;
+}
+
+.log-reg-invitation a {
+  color: #3374ff;
+}

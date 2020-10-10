@@ -1,0 +1,345 @@
+/* Home Page */
+
+/* Hero section with Background Image */
+.hero {
+  min-height: 92vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  background-image: url(https://images.unsplash.com/photo-1559596116-b0979cbe80b6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2468&q=80);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* Grow into space */
+  flex: 1;
+  
+  color: white;
+}
+
+.hero * {
+  margin: 1rem;
+}
+
+/* Button with hover and active states */
+.hero .page-button {
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  
+  padding: .4rem;
+  border: 1px solid white;
+  border-radius: 15px;
+}
+
+.hero .page-button:hover {
+  color: white;
+  background-color: black;
+}
+
+.hero .page-button:active {
+  position: relative;
+  top: 7px;
+}
+
+/* Page text */
+#page-text {
+  min-height: 100vh;
+
+  /* Grow into space */
+  flex: 1;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
+#page-text * {
+  margin: 1rem 15rem;  
+}
+
+
+/* Gallery Page*/
+
+/* Main with picture gallery */
+.gallery {
+  display: grid;
+  /* Make Responsive */
+  grid-template-columns: repeat(auto-fill, minmax(315px, 1fr));
+  justify-items: center;
+  
+  width: 100vw;
+  margin: auto;
+}
+
+/* Images */
+.gallery img {
+  min-width: 300px;
+  margin: 0.25rem; 
+  border-radius: 10px 10px 0px 0px;
+}
+
+/* Cards */
+.gallery figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  border: 2px solid white;
+  border-radius: 15px;
+  
+  max-width: 320px;
+  
+  background-color: white;
+}
+
+.gallery figure:hover {
+  cursor: pointer;
+}
+
+/* Card contents */
+figure * {
+  /* This applies to both the gallery and contact us figures */
+  margin: .4rem;
+}
+
+
+/* Contact Page */
+
+/* First viewport */
+.page-wrapper .first-viewport {
+  /* Set height to make up for the 8vh from nav so they equal 100vh */
+  min-height: 92vh;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Team */
+.first-viewport .team {
+  color: white;
+}
+
+/* Main with picture gallery */
+.contact-gallery {
+  width: 100vw;
+  margin: auto;
+  
+  display: grid;
+  /* Make Responsive */
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  justify-items: center;
+  /* Grow into space */
+  flex: 1;
+}
+
+/* Images */
+.contact-gallery img {
+  min-width: 320px;
+  margin: 0.25rem; 
+  border-radius: 10px 10px 0px 0px;
+}
+
+/* Cards */
+.contact-gallery figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  border: 2px solid white;
+  border-radius: 15px;
+  
+  max-width: 350px;
+  max-height: 410px;
+  
+  background-color: white;
+}
+
+.contact-gallery figure:hover {
+  cursor: pointer;
+}
+
+/* Card contents */
+
+/* Contact Form link */
+.contact-form-link {
+  text-decoration: none;
+  
+  padding: .5em;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+  border: 2px solid white;
+  border-radius: 12px;
+  background-color: white;
+  color: black;
+}
+
+.contact-form-link:hover {
+  background-color: black;
+  color: white;
+}
+
+.contact-form-link:active {
+  position: relative;
+  top: 5px;
+}
+
+/* Contact form section */
+/* Form Wrapper */
+#contact-form {
+  min-height: 100vh;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Form */
+#contact-form form {
+  max-width: 45ch;
+
+  border: 1px solid grey;
+  border-radius: 2rem;
+  background-color: #F7F7F7;
+  /* Make child span height */
+  display: grid;
+}
+
+/* Fieldsets */
+#contact-form .full-fieldset {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Inquiry fieldset */
+#contact-form .inquiry-fieldset, .contact-fieldset {
+  /* Make text area expand into space */
+  grid-template-rows: auto 1fr;
+  place-items: center;
+}
+
+/* Legends */
+#contact-form legend { 
+  padding: .5em;
+  /* Center legends */
+  margin: auto;
+}
+
+/* Input Area */
+#contact-form input {
+  margin: auto;
+
+  min-width: 33ch;
+  text-align: center;
+}
+
+/* Text Area */
+#contact-form textarea {
+  margin: auto;
+
+  min-width: 30ch;
+  min-height: 150px;
+  text-align: center;
+}
+
+/* Send Message Button */
+.send-button {
+  display: flex;
+}
+
+#contact-form .send-button button {
+  margin: auto;
+  padding: 5px;
+  border: .5px solid grey;
+  border-radius: .5rem;
+  
+  background: linear-gradient(to bottom, #7892c2 4%, #1a1a1a 80%);
+  background-color: #7892c2; 
+}
+
+#contact-form .send-button button:hover {
+  cursor: pointer;
+  
+  background: linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
+	background-color: #476e9e;
+}
+
+#contact-form .send-button button:active {
+  /* Move button down on click */
+	position: relative;
+	top: 4px;
+}
+
+
+/* Login & Registration Pages */
+
+.log-reg-form-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* Grow into space + sticky footer */
+  flex: 1;
+}
+
+/* Form styles */
+.log-reg-form {
+  width: 40ch;
+  height: 50vh;
+
+  border: 1px solid grey;
+  border-radius: 1.5rem;
+  background-color: #F7F7F7;
+  padding: 1rem;
+  /* Make child span height */
+  display: grid;
+}
+
+.log-reg-form legend, .log-reg-form label {
+  /* Center */
+  margin: auto;
+}
+
+.log-reg-form input {
+  border: 2px solid lightgrey;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* Button with hover and active states */
+.log-reg-button-wrapper {
+  display: flex;
+}
+
+.log-reg-button {
+  padding: .25em .8em;
+  border: .5px solid grey;
+  border-radius: 1rem;
+  
+  background: linear-gradient(to bottom, #7892c2 4%, #1a1a1a 80%);
+  background-color: #7892c2; 
+  
+  /* Center */
+  margin: auto;
+}
+
+.log-reg-button:hover {
+  cursor: pointer;
+
+	background: linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
+	background-color: #476e9e;
+}
+
+.log-reg-button:active {
+  /* Move button down on click */
+	position: relative;
+	top: 4px;
+}
+
+.log-reg-invitation a:hover {
+  cursor: pointer;
+}

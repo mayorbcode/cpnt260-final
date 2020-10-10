@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=">
+  <title>Contact Us</title>
+  <!-- Font awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+  <!-- css links -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/resets.css">
+  <link rel="stylesheet" href="css/typography.css">
+  <link rel="stylesheet" href="css/utilities.css">
+</head>
+<body>
+  <main class="page-wrapper">
+    <!-- Navigation -->
+    <nav class="main-nav"> 
+      <i class="btn fas fa-bars"></i> 
+      <a href="index.html"><div class="logo">
+        <i class="fab fa-jenkins"></i>
+        <h4 class="company name">Sophisticated Cigars</h4>
+        </div></a>
+      <ul>
+        <li><a href="gallery.html">Gallery</li></a>
+        <li><a class="current" href="contact.html">Contact Us</li></a>
+        <li><a href="login.html">Login</li></a>
+        <li><a class="register-link" href="register.html">Register</li></a>
+      </ul>
+    </nav>
+    <div class="first-viewport">
+      <h1 class="team">Our Team</h1>
+      <div class="contact-gallery">
+        <figure>
+          <img src="assets/images/contact/image1s.jpg" alt="Random Lorem Picsum">
+          <figcaption>
+            <h3>Joseph Lewitt</h3>
+            <p>Owner</p>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="assets/images/contact/image2s.jpg" alt="Random Lorem Picsum">
+          <figcaption>
+            <h3>Jane Doe</h3>
+            <p>Manager</p>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="assets/images/contact/image3s.jpg" alt="Random Lorem Picsum">
+          <figcaption>
+            <h3>John Doe</h3>
+            <p>Barista</p>
+          </figcaption>
+        </figure>
+      </div>
+      <a href="#contact-form" class="contact-form-link">Fill out Contact Form</a>
+    </div>
+    <section id="contact-form">
+      <form
+  action="https://formspree.io/f/mrgoeaan"
+  method="POST">
+        <fieldset class="full-fieldset">
+          <legend>Please fill out our contact form</legend>
+          <fieldset class="contact-fieldset">
+            <legend>Contact Information</legend>
+            <label for="email">
+              Your email:</label>
+            <input type="email" name="_replyto" id="email" placeholder="How should we contact you?">
+          </fieldset>
+          <fieldset class="inquiry-fieldset">
+           <legend>Inquiry</legend>
+            <label for="text-area">
+              Your message:</label>
+            <textarea name="message" id="text-area" placeholder="How can we help you?"></textarea>
+          </fieldset>
+          <div class ="send-button">
+            <button type="submit">Send Message</button>
+          </div>
+        </fieldset>
+      </form>
+    </section>
+    <footer class="page-footer">
+      <p><small>&copy Licenced by MayorB co. 2020</small></p>
+    </footer>
+  </main>
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+/* Page Resets */
+html * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+fieldset {
+  border: 0;
+}
+

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <!-- css links -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/resets.css">
+    <link rel="stylesheet" href="css/typography.css">
+    <link rel="stylesheet" href="css/utilities.css">
+</head>
+<body>
+  <main class="page-wrapper">
+    <!-- Navigation -->
+    <nav class="main-nav">  
+      <i class="btn fas fa-bars"></i>
+      <a href="index.html"><div class="logo">
+        <i class="fab fa-jenkins"></i>
+        <h4 class="company name">Sophisticated Cigars</h4>
+        </div></a>
+      <ul>
+        <li><a  href="gallery.html">Gallery</li></a>
+        <li><a href="contact.html">Contact Us</li></a>
+        <li><a class="current" href="login.html">Login</li></a>
+        <li><a class="register-link" href="register.html">Register</li></a>
+      </ul>
+    </nav>
+    <section class="log-reg-form-section">
+      <form class="log-reg-form" action="#">
+          <fieldset class="full-log-reg-fieldset">
+            <legend>Sign-in to your Account</legend>
+            <fieldset class="username-fieldset">
+              <label for="usname">Username: <abbr title="required" aria-label="required"><span class="required">*</span></abbr></label>
+              <input id="usname" type="email" name="userName" placeholder="What is your email?" required>
+            </fieldset>
+            <fieldset class="password-fieldset">
+              <label for="pword">Password: <abbr title="required" aria-label="required"><span class="required">*</span></abbr></label>
+              <input id="pword" type="password" name="passWord" placeholder="What is your password?" required>
+            </fieldset>
+            <div class="log-reg-button-wrapper">
+              <button class="log-reg-button" type="submit">Login</button>
+            </div>
+          </fieldset>
+        </form>
+      <div class="log-reg-invitation">
+        <p>Don't have a password? <a href="register.html">Register</a> for free today!</p>
+      </div>
+      </section>
+    <footer class="page-footer">
+      <p><small>&copy Licenced by MayorB co. 2020</small></p>
+    </footer>
+  </main>
+  <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
