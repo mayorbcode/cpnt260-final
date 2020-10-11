@@ -4,6 +4,7 @@ Patrick Bello
 Brett Searle, Josh Razon, Nhat Nguyen, Emil Joseph (Helped review code)  
 Images from [Unsplash](https://unsplash.com/)  
 Contact form from [Formspree](https://formspree.io/)  
+[Tony's hamburger toggle sample code](https://github.com/sait-wbdv/sample-code/tree/master/frontend/hamburger-toggle)   
 
 ### [Github Pages](https://mayorbcode.github.io/cpnt260-final/)  
   
