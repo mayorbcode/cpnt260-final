@@ -12,7 +12,6 @@
   min-height: 8vh;
   border-bottom: 1px solid black;
   
-  background-color: black;
   /* Keep nav in viewport. 
   Not a huge fan tbh. The opacity declaration also seems to override the opacity of my nav options as well, making them look too dim/dull. 
   What do you think Tony?*/
@@ -22,11 +21,14 @@
   opacity: .6; */
 
   display: flex;
-  justify-content: space-between;
 }
 
 .main-nav:hover {
   border-bottom: 1px solid white;
+}
+
+nav li:nth-child(1) {
+  display: none;
 }
 
 /* Company name and logo */
@@ -37,51 +39,20 @@
 }
 
 .logo * {
-  margin: 20px;
-  font-size: 3rem;
-}
-
-.logo .company {
-  display: none;
-}
-/* Hamburger Menu */
-
-.main-nav .btn {
-  margin: 20px;
-  
-  font-size: 3rem;
-  
-  color: white;
-}
-
-.main-nav .btn:hover {
-  cursor: pointer; 
-}
-
-.main-nav .btn:active {
-  position: relative;
-  top: 4px;
-}
-.main-nav ul li {
-  list-style: none;
-  text-align: center;
-
-  border: 1px solid white;
+  margin: 1rem .5rem;
 }
 
 /* Other nav links */
 .main-nav ul {
-  display: none;
+  list-style-type: none;
+  
+  display: flex;
+  gap: 1rem;
+  /* Move to the right */
+  margin-left: auto;
+  /* Move away from right page boundary */
+  margin-right: .5rem;
 }
-
-.main-nav ul a {
-  display: block;
-}
-
-.visible {
-  display: block;
-}
-
 
 .main-nav a {
   /* Remove underline */
@@ -151,39 +122,121 @@ fieldset {
   cursor: pointer;
 }
 
+/* Hamburger Menu */
+.main-nav .btn {
+  display: none;
+}
+
+.main-nav .exit {
+  display: none;
+}
 
 /* Media query */
-@media (orientation: landscape) {
+@media (orientation: portrait) { 
+  .main-nav ul {
+  display: none;
+}
+  
+  .page-wrapper .visible {
+    display: block;  
+  }
+  
+    
+  .main-nav .brand {
+    display: none;
+  }
+  
   .main-nav {
-    justify-content: flex-start;
+    display: block;
+  }
+  
+  .main-nav .btn {
+    color: white;
+    /* Inline-block so the contents don't span the full viewport width */
+    display: inline-block;
+    
+    font-size: 3rem;
+    margin: 1rem;
+  }
+  
+   .page-wrapper .hide {
+    display: none;
+  }
+  
+  .main-nav .btn:hover {
+    cursor: pointer;
+  }
+  
+  .main-nav .btn:active {
+    position: relative;
+    top: 4px;
+  }
+  
+  .main-nav .exit {
+    color: white;
+    
+    font-size: 3rem;
+    margin: 1rem;
+  }
+  
+  .main-nav .exit:hover {
+    cursor: pointer;
+  }
+  
+  .main-nav .exit:active {
+    position: relative;
+    top: 4px;
   }
   
   .main-nav ul {
-    list-style-type: none;
-    
-    display: flex;
-    /* Spacing between li elements */
-    gap: 1rem;
-    /* Move to the right */
-    margin-left: auto;
-    /* Move away from right page boundary */
-    margin-right: .5rem;
+    margin: auto;
+    padding-left: 0;
   }
-
+  
   .main-nav ul li {
-    border: none;
+   border: 1px solid black;
+    
+   margin: auto;
+   text-align: center;
   }
-
-  .main-nav .btn {
-    display: none;
+  
+  .main-nav a {
+    /* Switch from block to inline-block in order to center contents */
+    display: inline-block;
+    padding: 1em;
+    color: white;
+    
+    text-align: center;
   }
+  
+  /* Some home page Responsiveness */
+  .hero * {
+    margin: 7.5vh;
 
-  .logo .company {
-    display: inline;
+    text-align: center;
   }
-
-  .logo * {
-    margin: 1rem .5rem;
-    font-size: 1.5rem;
+  
+  .hero h1 {
+    font-size: 10vh; 
+  }
+  
+  .hero p {
+    font-size: 4.2vh;
+  }
+  
+  .hero .page-button {
+    font-size: 5vh;
+    border-radius: 2vh;
+  }
+  
+  #page-text * {
+    margin: auto;
+    
+    line-height: 3rem;
+    font-size: 4vh;
+  }
+  
+  #page-text p {
+    font-size: 3vh;
   }
 }

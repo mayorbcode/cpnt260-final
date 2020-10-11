@@ -111,7 +111,7 @@ figure * {
 /* First viewport */
 .page-wrapper .first-viewport {
   /* Set height to make up for the 8vh from nav so they equal 100vh */
-  min-height: 92vh;
+  /* min-height: 92vh; */
   
   display: flex;
   flex-direction: column;
@@ -130,7 +130,7 @@ figure * {
   
   display: grid;
   /* Make Responsive */
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
   justify-items: center;
   /* Grow into space */
   flex: 1;
@@ -152,8 +152,8 @@ figure * {
   border: 2px solid white;
   border-radius: 15px;
   
-  max-width: 350px;
-  max-height: 410px;
+  max-width: 340px;
+  /* max-height: 410px; */
   
   background-color: white;
 }
@@ -161,8 +161,6 @@ figure * {
 .contact-gallery figure:hover {
   cursor: pointer;
 }
-
-/* Card contents */
 
 /* Contact Form link */
 .contact-form-link {
