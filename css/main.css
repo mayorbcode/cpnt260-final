@@ -201,60 +201,53 @@ figure * {
 
   border: 1px solid grey;
   border-radius: 2rem;
+  /* Increase padding inside form */
+  padding: 2rem;
+
   background-color: #F7F7F7;
   /* Make child span height */
   display: grid;
 }
 
-/* Fieldsets */
+/* Fieldset */
 #contact-form .full-fieldset {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-/* Inquiry fieldset */
+/* Inquiry & contact fieldsets/wrappers */
 #contact-form .inquiry-fieldset, .contact-fieldset {
   /* Make text area expand into space */
+  display: grid;
   grid-template-rows: auto 1fr;
-  place-items: center;
-}
-
-/* Legends */
-#contact-form legend { 
-  padding: .5em;
-  /* Center legends */
-  margin: auto;
-}
-
-/* Input Area */
-#contact-form input {
-  margin: auto;
-
-  min-width: 33ch;
-  text-align: center;
 }
 
 /* Text Area */
 #contact-form textarea {
+  /* Center */
   margin: auto;
 
   min-width: 30ch;
   min-height: 150px;
-  text-align: center;
+  /* Move text away from border a little */
+  padding: 1vh;
 }
 
 /* Send Message Button */
 .send-button {
+  /* Make flex container */
   display: flex;
 }
 
 #contact-form .send-button button {
-  margin: auto;
+  /* Customize box sizing properties */
+  margin: 10px auto 0px auto;
   padding: 5px;
   border: .5px solid grey;
   border-radius: .5rem;
   
+  /* Set background collor with gradient */
   background: linear-gradient(to bottom, #7892c2 4%, #1a1a1a 80%);
   background-color: #7892c2; 
 }
@@ -297,15 +290,23 @@ figure * {
   display: grid;
 }
 
-.log-reg-form legend, .log-reg-form label {
+.log-reg-form legend {
   /* Center */
   margin: auto;
+}
+
+.log-reg-form label {
+  /* Center in vertical axis but not in horizontal axis */
+  margin: auto 0;
+}
+
+.username-fieldset, .password-fieldset, .confirm-password-fieldset {
+  display: grid;
 }
 
 .log-reg-form input {
   border: 2px solid lightgrey;
   border-radius: 5px;
-  text-align: center;
 }
 
 /* Button with hover and active states */
